@@ -38,13 +38,13 @@ nav {
   cursor: pointer;
   z-index: 5;
   padding: 1rem;
+  user-select: none;
 }
 
 @media(min-width: 767px) {
   .cart {
-    top: 6rem;
+    top: 0rem;
     bottom: unset;
-    user-select: none;
   }
 }
 
@@ -93,11 +93,20 @@ nav {
   }
 }
 
+
 #toast-container {
-  top: 3.1rem !important;
+  top: -2.5rem !important;
   right: 7rem !important;
   animation: fade-in 200ms ease-in-out !important;
 }
+
+@media(max-width: 767px) {
+  #toast-container {
+    left: 1rem !important;
+  }
+}
+
+
 
 @keyframes fade-in {
   from {
